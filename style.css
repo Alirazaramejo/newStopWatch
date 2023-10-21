@@ -1,27 +1,31 @@
-body{
+body {
     background-color: #2c3e50;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-#container{
+
+#container {
     color: #d7dfe4;
 }
-.digit{
+
+.digit {
     font-size: 150px;
     font-weight: bold;
 }
-.txt{
+
+.txt {
     font-size: 40px;
     font-weight: bold;
 }
-#btnContainer{
+
+#btnContainer {
     text-align: center;
     margin-top: 40px;
-
 }
-.btn{
+
+.btn {
     padding: 7px 25px;
     font-size: 15px;
     margin: 0px 10px;
@@ -29,12 +33,37 @@ body{
     border: none;
     cursor: pointer;
 }
-#Start{
+
+#Start {
     background-color: rgb(35, 230, 51);
 }
-#Stop{
+
+#Stop {
     background-color: rgb(228, 113, 68);
 }
-#Reset{
+
+#Reset {
     background-color: rgba(51, 32, 223, 0.781);
 }
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .digit {
+        font-size: 100px;
+    }
+
+    .txt {
+        font-size: 30px;
+    }
+
+    #btnContainer {
+        margin-top: 20px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 5px 20px;
+    }
+}
+
+/* Add more media queries as needed for other screen sizes */
